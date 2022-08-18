@@ -1,28 +1,9 @@
 import React from "react"
 import Header from "../molecules/header"
 import clip from "../../assets/clip.svg"
-import { topings } from "../../data/toping-dummy"
 
 export function AddToping() {
-
   const [inputFile, setInputFile] = React.useState("Photo Toping")
-
-  function addToping(e) {
-    e.preventDefault()
-
-    const name = document.getElementById("name").value
-    const price = document.getElementById("price").value
-    const photo = document.getElementById("photo-toping").value
-
-    setInputFile(photo)
-
-    topings.push({
-      name: name,
-      price: price,
-      photo: photo
-    })
-    console.log(topings);
-  }
 
   return (
     <>
@@ -30,7 +11,6 @@ export function AddToping() {
     <main className="after-nav">
         <section className="pt3 flex jc-between ai-start">
             <form className="w100 flex-col mx5"
-             onSubmit={ addToping }
             >
                 <h2 className="mb3 txt-red fw700">Toping</h2>
                 <input className="modal-input mb1-5 br-red br5"
@@ -53,7 +33,7 @@ export function AddToping() {
                 />
 
                 <label className="input mb4 flex jc-between ai-center" htmlFor="photo-toping">
-                    <p>{ inputFile }</p>
+                    <p>{inputFile}</p>
                     <img src={clip} alt="clip" />
                 </label>
                 <div className="flex jc-center">

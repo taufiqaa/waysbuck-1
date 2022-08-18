@@ -1,59 +1,49 @@
-import gelatin from "../../assets/T_tea-gelatin.svg"
-import mango from "../../assets/T_mango.svg"
-import coconut from "../../assets/T_green-coconut.svg"
-import mangoBoba from "../../assets/T_boba-mango.svg"
-import berryBoba from "../../assets/T_bill-berry.svg"
-import kiwiPopping from "../../assets/T_kiwi-popping.svg"
-import matcha from "../../assets/T_matcha-cantaloupe.svg"
-import strawberryPopping from "../../assets/T_strawberry-popping.svg"
-
-
 const toppingData =[
     {
         id : 1,
-        pict : gelatin,
+        pict : "https://picsum.photos/200/300",
         menuTitle : 'Bubble Tea Gelatin',
         price: 4000
     },
     {
         id : 2,
-        pict : mango,
+        pict : "https://picsum.photos/200/300",
         menuTitle : 'Mango',
         price: 3500
     },
     {
         id : 3,
-        pict :coconut,
+        pict :"https://picsum.photos/200/300",
         menuTitle : 'Green Coconut',
         price: 4500
     },
     {
         id : 4,
-        pict : mangoBoba,
+        pict : "https://picsum.photos/200/300",
         menuTitle : 'Bobba Mango',
         price: 5000
     },
     {
         id : 5,
-        pict : berryBoba,
+        pict : "https://picsum.photos/200/300",
         menuTitle : 'Bill Berry Boba',
         price: 5500
     },
     {
         id : 6,
-        pict : kiwiPopping,
+        pict : "https://picsum.photos/200/300",
         menuTitle : 'Kiwi Popping Pearl',
         price: 4000
     },
     {
         id : 7,
-        pict : matcha,
+        pict : "https://picsum.photos/200/300",
         menuTitle : 'Matcha Cantaloupe',
         price: 3500
     },
     {
         id : 8,
-        pict : strawberryPopping,
+        pict : "https://picsum.photos/200/300",
         menuTitle : 'Strawberry Popping',
         price: 5000
     },
