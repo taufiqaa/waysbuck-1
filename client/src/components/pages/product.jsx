@@ -1,28 +1,9 @@
 import React from "react"
 import Header from "../molecules/header"
 import clip from "../../assets/clip.svg"
-import { products } from "../../data/product-dummy"
 
 export function AddProduct() {
-  
-  const [inputFile, setInputFile] = React.useState("Photo Products")
-
-  function addProduct(e) {
-    e.preventDefault()
-
-    const name = document.getElementById("name").value
-    const price = document.getElementById("price").value
-    const photo = document.getElementById("photo-product").value
-
-    setInputFile(photo)
-
-    products.push({
-      name: name,
-      price: price,
-      photo: photo
-    })
-    console.log(products);
-  }
+  const [inputFile, setInputFile] = React.useState("Photo Toping")
 
   return (
     <>
@@ -30,7 +11,6 @@ export function AddProduct() {
     <main className="after-nav">
         <section className="pt3 flex jc-between ai-start">
             <form className="w100 flex-col mx5"
-             onSubmit={ addProduct }
             >
                 <h2 className="mb3 txt-red fw700">Product</h2>
                 <input className="modal-input mb1-5 br-red br5"
@@ -53,7 +33,7 @@ export function AddProduct() {
                 />
 
                 <label className="input mb4 flex jc-between ai-center" htmlFor="photo-product">
-                    <p>{ inputFile }</p>
+                    <p>{inputFile}</p>
                     <img src={clip} alt="clip" />
                 </label>
                 <div className="flex jc-center">
