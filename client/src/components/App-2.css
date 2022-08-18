@@ -291,25 +291,22 @@
 .detail-product-section{
     display: flex;
     flex-wrap: wrap;
-    height: 40rem;
-    width: 65rem;
-    margin-left: 7rem;
+    justify-content: center;
 }
 
 .picture-detail-menu{
     width: 22rem;
-    height: 24rem;
     margin-right: 5rem;
 }
 
 .picture-detail{
     width: 22rem;
-    height: 22rem;
+    aspect-ratio: 241 / 312;
+    object-fit: cover;
 }
 
 .right-detail-product{
     width: 36rem;
-    height: 40rem;
 }
 
 .flavour-price-detail{

@@ -49,11 +49,7 @@ function DetailProduct() {
     <Header addCart={addCart} />
     <div className="detail-product-section after-nav">
       <div className="picture-detail-menu pt1"> 
-        <img
-          className="picture-detail"
-          src={getData.pict}
-          alt=""
-        ></img>
+        <img className="picture-detail" src={getData.pict} alt="drink"></img>
       </div>
       <div className="right-detail-product">
         <div className="flavour-price-detail">
