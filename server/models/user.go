@@ -11,6 +11,7 @@ type User struct {
 	// Products  []ProductUserResponse `json: "products"`
 	CreatedAt time.Time `json:"-"`
 	UpdatedAt time.Time `json:"-"`
+	Status    string    `json:"status"`
 }
 
 type UsersProfileResponse struct {
